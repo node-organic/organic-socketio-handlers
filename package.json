@@ -1,9 +1,12 @@
 {
   "name": "organic-socketio-handlers",
-  "description": "",
-  "version": "1.0.0",
+  "description": "Autoload socketio handlers (similar to [organic-express-routes](https://www.npmjs.com/package/organic-express-routes)) based on [organic-socketio-server](https://www.npmjs.com/package/organic-socketio-server)",
+  "version": "0.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release-patch": "npm run test && npm version patch && npm publish && git push --tags && git push origin master",
+    "release-minor": "npm run test && npm version minor && npm publish && git push --tags && git push origin master",
+    "release-major": "npm run test && npm version major && npm publish && git push --tags && git push origin master"
   },
   "devDependencies": {
     "eslint": "^4.18.2",
@@ -17,5 +20,16 @@
   },
   "dependencies": {
     "fast-glob": "^2.2.1"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-organic/organic-socketio-handlers.git"
+  },
+  "author": "Boris Filipov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-organic/organic-socketio-handlers/issues"
+  },
+  "homepage": "https://github.com/node-organic/organic-socketio-handlers#readme"
 }
