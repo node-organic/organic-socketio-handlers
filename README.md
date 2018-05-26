@@ -7,6 +7,7 @@ based on [organic-socketio-server](https://www.npmjs.com/package/organic-socketi
 
 ```
 {
+  "log": Boolean,
   "basedir": String,
   "patterns": [String],
   "reactOn": {
